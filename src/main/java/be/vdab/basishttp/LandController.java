@@ -9,10 +9,10 @@ class LandController {
     String onsLand() {
         return "Belgie";
     }
-    private record Persoon(String voornaam,String familienaam,int aantalKinderen){
+  private record Persoon(String voornaam,String familienaam,int aantalKinderen){
     }
     @GetMapping("koning")
     Persoon onzeKoning(){
-        return new Persoon("Filip","van Belgie",4);
+        return new Persoon("Filip","van Belgie",5);
     }
 }
